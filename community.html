@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Section</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh; /* Adjust height as needed */
+        }
+
+        .text-section {
+            background-color: #ffd700; /* Yellow background */
+            color: black;
+            padding: 50px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .text-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .text-section p {
+            font-size: 1em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .text-section button {
+            background-color: black;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+            align-self: flex-start;
+        }
+
+        .image-section {
+            flex: 1;
+            background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2erzBDJGiYQbQnK-m6AycXCBKcmTi6ohdltQMqV6N1c1wgru3'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-section">
+            <h2>Explore Our Community</h2>
+            <p>Connect with fellow DIY enthusiasts, share your projects, and learn from the experiences of others. Our vibrant community is here to support and inspire you every step of the way.</p>
+            <script>
+                // Replace 'on-clickbutton' with the desired custom element name
+                class OnClickButton extends HTMLElement {
+                    connectedCallback() {
+                        this.innerHTML = '<button>Join Now</button>';
+                        this.addEventListener('click', () => {
+                            window.location.href = 'https://www.homeimprovementhub.com/community';
+                        });
+                    }
+                }
+                customElements.define('on-clickbutton', OnClickButton);
+            </script>
+        </div>
+        <div class="image-section">
+            </div>
+    </div>
+</body>
+</html>

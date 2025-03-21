@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIY Home Improvement Hub</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav li {
+            margin-left: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .hero {
+            position: relative;
+            height: 500px;
+            overflow: hidden;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .hero-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .hero-content p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .hero-content .buttons {
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-content .btn {
+            padding: 15px 30px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .hero-content .btn-primary {
+            background-color: #333;
+            color: white;
+        }
+
+        .hero-content .btn-secondary {
+            background-color: transparent;
+            border: 2px solid #333;
+            color: #333;
+        }
+
+        .categories {
+            background-color: #ffc107;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .category {
+            text-align: center;
+            margin: 20px;
+            flex: 1;
+            min-width: 150px;
+            max-width: 200px;
+        }
+
+        .category img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .category h3 {
+            margin-bottom: 10px;
+        }
+
+        .category p {
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">DIYhub</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <img src="your-image.jpg" alt="DIY Home Improvement"> 
+            <div class="hero-content">
+                <h1>Welcome to our DIY Home Improvement H...</h1>
+                <p>Discover a wealth of tutorials, tips, and community support for all your DIY home improvement projects. Explore our comprehensive guides, connect with fellow enthusiasts, and transform your living spaces with confidence.</p>
+                <div class="buttons">
+                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn btn-secondary">Explore Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="category">
+                <img src="carpentry-icon.png" alt="Carpentry Basics">
+                <h3>Carpentry Basics</h3>
+                <p>Unlock the secrets to woodworking with our in-depth guides.</p>
+            </div>
+            <div class="category">
+                <img src="painting-icon.png" alt="Painting Techniques">
+                <h3>Painting Techniques</h3>
+                <p>Transform any room with our expert painting tips and tricks.</p>
+            </div>
+            <div class="category">
+                <img src="plumbing-icon.png" alt="Plumbing Solutions">
+                <h3>Plumbing Solutions</h3>
+                <p>Conquer common plumbing issues with our step-by-step guides.</p>
+            </div>
+            <div class="category">
+                <img src="electrical-icon.png" alt="Electrical Wiring">
+                <h3>Electrical Wiring</h3>
+                <p>Master the art of electrical work and keep your home safe.</p>
+            </div>
+            <div class="category">
+                <img src="decor-icon.png" alt="DIY Decor Ideas">
+                <h3>DIY Decor Ideas</h3>
+                <p>Unleash your creativity and personalize your living spaces.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
